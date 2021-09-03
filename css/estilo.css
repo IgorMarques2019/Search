@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#search-section {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://c.wallhere.com/photos/82/5a/landscape_mountains_trees_snowy_mountain-1537037.jpg!d);
+  background-size: cover;
+  background-position: center;
+}
+
+#search-div {
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.267);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  filter: saturate(2);
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  box-sizing: border-box;
+  padding: 20px;
+  border-top: 4px solid rgb(62, 59, 255);
+  box-shadow:0px 0px 6px rgba(0, 0, 0, 0.116);
+  border-radius:5px;
+}
+
+form > h1 {
+  color: rgb(62, 59, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-weight: lighter;
+}
+hr {
+  height:1px;
+  border:none;
+  background-color:rgb(62, 59, 255);
+  margin:05px auto;
+  width:100px;
+}
+
+#search_query {
+  max-width:435px;
+  width:100%;
+  padding: 10px 0;
+  text-indent: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border:1px solid rgb(62, 59, 255);
+  
+}
+::placeholder {
+  color:rgb(62, 59, 255);
+}
+#search_query:focus {
+  outline: none;
+  
+}
+
+
+#inp_search {
+  width: 120px;
+  padding: 10px 30px;
+  background-color:rgb(62, 59, 255);
+  color:white;
+  border:none;
+  opacity:1;
+  font-size:1em;
+}
+#inp_search:hover {
+opacity:0.9;
+}
+@media screen and (max-width:768px) {
+  form > h1 {
+    font-weight:lighter;
+    font-size:20px;
+  }
+  
+  #search_query {
+    max-width:none;
+    width:100%;
+  }
+#search_query, #inp_search {
+  width:100%;
+}
+
+
+
+}
+
+a {
+  display:inline-block;
+  color:white;
+  position: absolute;
+  bottom:20px;
+  right:20px;
+  
+}
+a:focus {
+  color:rgb(62, 59, 255);
+  
+}
+
+a > i {
+font-size:2em;
+}
